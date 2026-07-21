@@ -44,3 +44,82 @@ that does not effect the time, Cu's we already know that
            so the θ(1)
 
 😊😊😊😊😊 Thanks 😊😊😊😊😊
+
+---
+
+## How to Run C++ Files Using `.sh` Script
+
+This repository provides a shell script to compile and run C++ programs easily.
+
+### File Structure
+
+
+.
+├── src
+│ └── example.cpp
+├── output
+│ └── example.exe
+└── run.sh
+
+
+### Give Execute Permission (First Time Only)
+
+Run this command:
+
+```bash
+chmod +x run.sh
+Run Any C++ Program
+
+Use:
+
+./run.sh filename
+
+Example:
+
+If you have:
+
+src/vector.cpp
+
+Run:
+
+./run.sh vector
+
+The script will:
+
+Compile the C++ file:
+g++ ./src/vector.cpp -o ./output/vector.exe
+Generate the executable inside the output folder.
+Run the compiled program automatically.
+Script Used
+#!/bin/bash
+
+echo compile the code...
+g++ ./src/$1.cpp -o ./output/$1.exe
+
+echo compile complete...
+
+echo running the file...
+./output/$1.exe
+
+echo
+
+echo run complete...
+
+Here $1 represents the filename passed while running the script.
+
+Example:
+
+./run.sh vector
+
+Here:
+
+$1 = vector
+
+So the script executes:
+
+g++ ./src/vector.cpp -o ./output/vector.exe
+
+Happy Coding 🚀
+
+
+One more small suggestion: rename your script from `run.sh` to something like `cpp-run.sh` if this repo is specifically for C++ DSA, because it makes the purpose clearer.
