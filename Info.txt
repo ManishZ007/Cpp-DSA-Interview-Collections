@@ -1,6 +1,6 @@
 Algorithmic Complexity / Big O / Asymptotic Analysis
 
-When we read some carector 1 by 1 
+When we read some character 1 by 1 
 "Rohan"
  12345   That is n => O(n)
 
@@ -14,12 +14,12 @@ that does not effect the time, Cu's we already know that
 
 **👉 So we give some categories so we can understand properly that we called notations
 
- - O(n^2) that is slower the O(n) it does't nean that O(n) is faster then O(n^2) some time it's depends on input size
+ - O(n^2) that is slower the O(n) it does't mean that O(n) is faster then O(n^2) some time it's depends on input size
 
  - O(log n) that is faster then O(n) that cut it in half
-    eg: (log2 8) -> 3 oprations
-    eg: (log2 16) -> 4 oprations
-    that is use in binary calssic search
+    eg: (log2 8) -> 3 operations
+    eg: (log2 16) -> 4 operations
+    that is use in binary search
 
 
 **👉 so Ω also the notation that for best case symbol name is Omega
@@ -38,7 +38,6 @@ that does not effect the time, Cu's we already know that
     
     eg: is Ω(1)
            O(1)
-           for varibale opration 
            name = "Rohan"
            nameCount = 12345
 
